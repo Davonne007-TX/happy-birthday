@@ -1,0 +1,58 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.birthday-container {
+  border: 2px solid #9d00ff;
+  padding: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 414px) {
+  .birthday-container {
+    width: 250px;
+    font-size: 10pt;
+    text-align: center;
+  }
+}
+.happyBirthday {
+  color: #9d00ff;
+  font-size: 5em;
+  font-family: "Agbalumo", sans-serif;
+}
+
+.janelle {
+  font-family: "Agbalumo", sans-serif;
+  font-size: 4em;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #c724b1,
+    0 0 82px #c724b1, 0 0 92px #c724b1, 0 0 102px #c724b1, 0 0 151px #c724b1;
+}
+
+/*animation*/
+.flicker {
+  animation: flickerAnimation 500ms linear infinite;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
